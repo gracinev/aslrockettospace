@@ -18,28 +18,14 @@ def home(request):
         }
     )
 
-def contact(request):
-    """Renders the contact page."""
+def flashcardmemorygame(request):
+    """Renders the flash memory game page."""
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/contact.html',
+        'app/flashcardmemorygame.html',
         {
-            'title':'Contact',
-            'message':'Your contact page.',
-            'year':datetime.now().year,
-        }
-    )
-
-def about(request):
-    """Renders the about page."""
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/about.html',
-        {
-            'title':'About',
-            'message':'Your application description page.',
+            'title':'Flash Card Memory Game',
             'year':datetime.now().year,
         }
     )
