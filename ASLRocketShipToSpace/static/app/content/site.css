@@ -40,3 +40,16 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
+
+#purpleSidebar {
+    background-color: #39305F;
+}
+
+.purpleSidebarHeader {
+    width: 180px;
+    height: 59px;
+    text-align: left;
+    font-family: Helvetica Neue;
+    font-size: 50px;
+    color: #FFFFFF;
+}
