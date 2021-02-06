@@ -43,3 +43,12 @@ def about(request):
             'year':datetime.now().year,
         }
     )
+
+def playDragGame(request):
+    """tmp function to test Drag Game"""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/dragdropgame.html'
+    )
+

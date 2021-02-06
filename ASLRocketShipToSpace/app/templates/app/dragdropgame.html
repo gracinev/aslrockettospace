@@ -1,0 +1,35 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <styl
+</head>
+<body>
+<p>Translate To Sign Language</p>
+<p id="word"></p>
+<div id="answer">
+
+</div>
+<div id="signBox">
+
+
+</div>
+<button id ="submit">Submit</button>
+</body>
+</html>
+
+{% endblock %}
+
+
+{% block scripts %}
+
+    {% load static %}
+<script src="{% static 'app/scripts/dragAndDropGame.js' %}"></script>
+
+{% endblock %}
