@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\static\app\scripts\flashcardgame.js" />
+    <Content Include="app\static\app\scripts\multiplechoice.js" />
     <Content Include="app\static\app\signs\letter_A.png" />
     <Content Include="app\static\app\signs\letter_B.png" />
     <Content Include="app\static\app\signs\letter_C.png" />
@@ -84,7 +85,9 @@
     <Content Include="app\static\app\signs\letter_X.png" />
     <Content Include="app\static\app\signs\letter_Y.png" />
     <Content Include="app\static\app\signs\letter_Z.png" />
+    <Content Include="app\templates\app\draganddropgame.html" />
     <Content Include="app\templates\app\flashcardmemorygame.html" />
+    <Content Include="app\templates\app\MCQgame.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />

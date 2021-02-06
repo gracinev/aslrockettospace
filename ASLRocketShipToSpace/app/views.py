@@ -29,3 +29,15 @@ def flashcardmemorygame(request):
             'year':datetime.now().year,
         }
     )
+
+def mcqgame(request):
+    """Renders the mcq game page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/mcqgame.html',
+        {
+            'title':'MCQ Game',
+            'year':datetime.now().year,
+        }
+    )
