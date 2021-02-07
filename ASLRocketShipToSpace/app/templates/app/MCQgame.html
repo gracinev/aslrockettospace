@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <title>Multiple Choice</title>
     <link rel="stylesheet" href="styles.css">
-      {% load static %}
-	<script src="{% static 'app/scripts/multiplechoice.js' %}"></script>
+
   </head>
   <body>
       <h1>Multiple Choice Game</h1>
@@ -21,5 +20,7 @@
           <button value="Option3" id="optionThree">Option 3</button>
           <button value="Option4" id="optionFour">Option 4</button>
       </div>
+  {% load static %}
+	<script src="{% static 'app/scripts/multiplechoice.js' %}"></script>
   </body>
 </html>

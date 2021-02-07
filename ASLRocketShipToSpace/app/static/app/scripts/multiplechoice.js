@@ -54,11 +54,9 @@ function loadGame() {
         //random choice with one letter removed
         const randWrongChoice = Math.floor(Math.random() * charRange);
         wrongButtonList[i].innerText = wrongCharacterList[randWrongChoice];
-
         //remove that letter that was just used so its not used again
         wrongCharacterList.splice(randWrongChoice, 1);
         charRange--;
-
     }
 
     //add an event listener for all the buttons
@@ -67,11 +65,10 @@ function loadGame() {
             determineWinner(this, question);
         });
     }
-
     //when a button is clicked, determine if they are the winner
     function determineWinner(btn, qstn) {
         if (btn.innerText == qstn.letter) {
-            console.log("Correct!");
+            alert("correct");
         }
     }
 };
