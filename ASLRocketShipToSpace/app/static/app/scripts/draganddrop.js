@@ -11,7 +11,6 @@ window.addEventListener('DOMContentLoaded', (e) => {
 
     for (let i = 0; i < chosenWord.length; i++) {
         let img = document.createElement("img");
-        img.addClass('dragAndDropImg');
         img.src = `/static/app/signs/letter_${chosenWord[i].toUpperCase()}.png`;
         img.draggable = true;
         img.alt = chosenWord[i].toUpperCase();
