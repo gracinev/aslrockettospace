@@ -6,6 +6,7 @@ from datetime import datetime
 from django.shortcuts import render
 from django.http import HttpRequest
 
+
 def home(request):
     """Renders the home page."""
     assert isinstance(request, HttpRequest)
@@ -13,10 +14,11 @@ def home(request):
         request,
         'app/index.html',
         {
-            'title':'Home Page',
-            'year':datetime.now().year,
+            'title': 'Home Page',
+            'year': datetime.now().year,
         }
     )
+
 
 def flashcardmemorygame(request):
     """Renders the flash memory game page."""
@@ -25,10 +27,11 @@ def flashcardmemorygame(request):
         request,
         'app/flashcardmemorygame.html',
         {
-            'title':'Flash Card Memory Game',
-            'year':datetime.now().year,
+            'title': 'Flash Card Memory Game',
+            'year': datetime.now().year,
         }
     )
+
 
 def mcqgame(request):
     """Renders the mcq game page."""
@@ -37,10 +40,11 @@ def mcqgame(request):
         request,
         'app/mcqgame.html',
         {
-            'title':'MCQ Game',
-            'year':datetime.now().year,
+            'title': 'MCQ Game',
+            'year': datetime.now().year,
         }
     )
+
 
 def draganddropgame(request):
     """Renders the drag and drop game page."""
@@ -49,7 +53,19 @@ def draganddropgame(request):
         request,
         'app/draganddropgame.html',
         {
-            'title':'Drag and Drop Game',
-            'year':datetime.now().year,
+            'title': 'Drag and Drop Game',
+            'year': datetime.now().year,
+        }
+    )
+
+
+def journey(request):
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/journey.html',
+        {
+            'title': 'Journey',
+            'year': datetime.now().year,
         }
     )

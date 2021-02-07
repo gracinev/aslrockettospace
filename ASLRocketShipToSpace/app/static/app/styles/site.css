@@ -1,0 +1,223 @@
+html, body, .home-container, .home-row {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#purpleSidebar {
+    height: 100%;
+    background-color: #39305F;
+    padding: 0px;
+}
+
+.purpleSidebarHeader {
+    margin-top: 70px;
+    font-family: Helvetica Neue;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+.purpleSidebarContent {
+    width: 100%;
+    margin: 58px;
+}
+
+.pageContent {
+    margin-top: 80px;
+    padding-left: 80px;
+}
+
+.indexPageText {
+    font-family: Helvetica Neue;
+    font-size: 37px;
+    letter-spacing: 0px;
+    color: #322E46;
+}
+
+.indexTileText {
+    padding-top: 35px;
+    padding-left: 30px;
+    padding-bottom: 70px;
+}
+
+.indexTile {
+    width: 388px;
+    height: 396px;
+    margin-right: 55px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 27px;
+}
+
+.indexTileImg {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#welcomeBackRow {
+    margin-bottom: 90px;
+}
+
+.indexPageRow {
+    margin-bottom: 35px;
+}
+
+.levelsBody {
+    background-color: #262626;
+}
+
+#sun {
+    position: absolute;
+    top: -698.441650390625px;
+    left: -494.5737609863281px;
+    width: 979px;
+    height: 1392px;
+}
+
+#mercury {
+    position: absolute;
+    top: 452px;
+    left: 194px;
+    width: 191px;
+    height: 191px;
+}
+
+#yelloworbit {
+    position: absolute;
+    top: -977.111328125px;
+    left: -134.52490234375px;
+    width: 686px;
+    height: 1898px;
+}
+
+#brightyelloworbit {
+    position: absolute;
+    top: -813.3565063476562px;
+    left: 304px;
+    width: 791px;
+    height: 1993px;
+}
+
+#venus {
+    position: absolute;
+    top: 209px;
+    left: 899px;
+    width: 273px;
+    height: 272px;
+}
+
+#blueorbit {
+    position: absolute;
+    top: -891.2344970703125px;
+    left: 793px;
+    width: 977px;
+    height: 2148px;
+}
+
+#saturn {
+    position: absolute;
+    width: 367px;
+    height: 281px;
+    top: 598px;
+    left: 1337px
+}
+
+#bluecomet {
+    position: absolute;
+    top: 35px;
+    left: 1569px;
+    width: 351px;
+    height: 170px;
+}
+
+#star {
+    position: absolute;
+    top: 574px;
+    left: 573px;
+    width: 12px;
+    height: 12px;
+}
+
+#smallbluecomet {
+    position: absolute;
+    top: 879px;
+    left: 151px;
+    width: 80px;
+    height: 39px;
+}
+
+#constellation {
+    position: absolute;
+    top: 817px;
+    left: 810px;
+    width: 300px;
+    height: 186px;
+}
+
+#redstar {
+    position: absolute;
+    top: 1003px;
+    left: 1366px;
+    width: 13px;
+    height: 13px;
+}
+
+#level1text {
+    position: absolute;
+    top: 660px;
+    left: 231px;
+    font-family: Helvetica Neue;
+    font-size: 37px;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+#level2text {
+    position: absolute;
+    top: 497px;
+    left: 977px;
+    font-family: Helvetica Neue;
+    font-size: 37px;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+#level3text {
+    position: absolute;
+    width: fit-content;
+    top: 903px;
+    left: 1451px;
+    font-family: Helvetica Neue;
+    font-size: 37px;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+#answer {
+    background-color: yellow;
+}
+
+.drapAndDropImg {
+    cursor: move;
+    padding: 1rem;
+    width: 128px;
+    height: 128px;
+}
+
+.dragging {
+    opacity: 0.5;
+}

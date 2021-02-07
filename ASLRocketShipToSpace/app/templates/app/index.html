@@ -1,6 +1,68 @@
-{% extends "app/layout.html" %}
-
-{% block content %}
-
-
-{% endblock %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - My Django Application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'app/styles/site.css' %}"/>
+</head>
+<body>
+<div class="container-fluid home-container">
+    <div class="row home-row">
+        <div id="purpleSidebar" class="col-md-2">
+            <div class="row home-row">
+                <div class="col-md-4 purpleSidebarContent">
+                    {% load static %}
+                    <div><img src="{% static 'app/rocketshipicon.png' %}"></div>
+                    <div class="purpleSidebarHeader"><a href="./">Home</a></div>
+                    <div class="purpleSidebarHeader"><a href="./journey">Journey</a></div>
+                    {% comment %}<div class="purpleSidebarHeader"><a href="./lessons">Lessons</a></div>
+                    <div class="purpleSidebarHeader"><a href="./games">Games</a></div>
+                    <div class="purpleSidebarHeader"><a href="./history">History</a></div>{% endcomment %}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10 pageContent">
+            <div id="welcomeBackRow" class="row">
+                <div class="col-md-8">
+                    <div class="indexPageText">Welcome back, Alex.</div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row indexPageRow">
+                <div class="col-md-8">
+                    <div class="indexPageText">Keep Playing:</div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+                <a href="/draganddropgame">
+                    <div class="col-md-4 indexTile">
+                        <div class="indexPageText indexTileText">Mix and match</div>
+                        {% load static %}
+                        <img class="indexTileImg" src="{% static 'app/mixandmatchicon.png' %}"/>
+                    </div>
+                </a>
+                <a href="/mcqgame">
+                    <div class="col-md-4 indexTile">
+                        <div class="indexPageText indexTileText">Flashcards</div>
+                        {% load static %}
+                        <img class="indexTileImg" src="{% static 'app/flashcardsicon.png' %}"/>
+                    </div>
+                </a>
+                <a href="/flashcardmemorygame">
+                    <div class="col-md-4 indexTile">
+                        <div class="indexPageText indexTileText">A, B, Cs</div>
+                        {% load static %}
+                        <img class="indexTileImg" src="{% static 'app/abcsicon.png' %}"/>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

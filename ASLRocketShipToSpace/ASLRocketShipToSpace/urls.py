@@ -14,4 +14,5 @@ urlpatterns = [
     path('flashcardmemorygame/', views.flashcardmemorygame, name='flashcardmemorygame'),
     path('mcqgame/', views.mcqgame, name='mcqgame'),
     path('draganddropgame/', views.draganddropgame, name='draganddropgame'),
+    path('journey/', views.journey, name='journey'),
 ]
