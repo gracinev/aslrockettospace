@@ -5,53 +5,63 @@
     <title>Title</title>
     {% load static %}
     <script src="{% static 'app/scripts/draganddrop.js' %}"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <style>
+        html {
+            height: 100%;
+        }
 
         body {
-            font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-            font-weight: 300;
+            font-family: "poppins", sans-serif;
+            font-weight: 400;
+            background: rgb(221, 236, 251);
+            background: linear-gradient(27deg, rgba(221, 236, 251, 0.7861344366848302) 0%, rgba(0, 153, 255, 0.856162447889312) 45%, rgba(35, 11, 73, 0.8365546047520571) 100%);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
 
         #word {
+            font-size: 25px;
             text-align: center;
-            grid-row: 2 /3;
+            font-weight: bold;
         }
 
         #prompt {
-            grid-row: 1 /2;
             text-align: center;
-            font-style: italic;
         }
 
-        body {
-            white-space: nowrap;
-            overflow: auto;
-            justify-content: center;
+        .handSymbol {
         }
 
         #game {
-            justify-content: center;
-            display: grid;
-            grid-template-columns: auto;
-            grid-template-rows: auto auto 40% 40% auto;
+            margin: 100px auto;
+            background: #f7f7f7;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 30px 10px;
+            border-radius: 30px;
         }
 
         .box {
-            min-width: 400px;
+            overflow: auto;
+            min-width: 300px;
             width: fit-content;
             min-height: 200px;
             margin: auto;
+            white-space: nowrap;
         }
 
         #signBox {
-            grid-row: 4 / 5;
-            background-color: aliceblue;
+            border-radius: 10px;
         }
 
         #answer {
-            grid-row: 3 /4;
-            background-color: yellow;
+            padding-left: 100px;
+            padding-right: 100px;
+            background-color: lightgray;
+            border-radius: 10px;
         }
 
         img {
@@ -62,14 +72,25 @@
         }
 
         #submit {
+            display: block;
+            text-align: center;
+            width: 100px;
+            text-decoration: none;
+            border: none;
+            padding: 10px 0;
             margin: auto;
-            grid-row: 5/6;
+            background-color: lightgray;
+            border-radius: 10px;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+        }
+        #submit:hover{
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .dragging {
-            opacity: 0.5;
-        }
+        #submit:focus {
+            outline: 0;
 
+        }
     </style>
 </head>
 
@@ -79,8 +100,9 @@
     <p id="word"></p>
     <div id="answer" class="box"></div>
     <div id="signBox" class="box"></div>
+    <input type="submit" id="submit">
 </div>
 
-<button id="submit">Submit</button>
+
 </body>
 </html>

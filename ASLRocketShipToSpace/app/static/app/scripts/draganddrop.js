@@ -13,6 +13,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
         let img = document.createElement("img");
         img.src = `/static/app/signs/letter_${chosenWord[i].toUpperCase()}.png`;
         img.draggable = true;
+        img.classList.add('handSymbol');
         img.alt = chosenWord[i].toUpperCase();
         img.addEventListener("dragstart", (e) => {
             img.classList.add('dragging');
