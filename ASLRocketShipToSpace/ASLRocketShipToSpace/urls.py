@@ -13,4 +13,5 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('flashcardmemorygame/', views.flashcardmemorygame, name='flashcardmemorygame'),
     path('mcqgame/', views.mcqgame, name='mcqgame'),
+    path('draganddropgame/', views.draganddropgame, name='draganddropgame'),
 ]

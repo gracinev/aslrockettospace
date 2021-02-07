@@ -1,11 +1,22 @@
-<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    {% load static %}
+	<script src="{% static 'app/scripts/draganddrop.js' %}"></script>
 </head>
 <body>
+<p>Translate To Sign Language</p>
+<p id="word"></p>
+<div id="answer">
 
+</div>
+<div id="signBox">
+
+
+</div>
+<button id ="submit">Submit</button>
 </body>
 </html>

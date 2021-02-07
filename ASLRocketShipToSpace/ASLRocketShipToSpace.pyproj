@@ -57,6 +57,7 @@
     <Folder Include="ASLRocketShipToSpace\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\static\app\scripts\draganddrop.js" />
     <Content Include="app\static\app\scripts\flashcardgame.js" />
     <Content Include="app\static\app\scripts\multiplechoice.js" />
     <Content Include="app\static\app\signs\letter_A.png" />

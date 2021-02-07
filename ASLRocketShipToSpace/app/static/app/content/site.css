@@ -13,3 +13,18 @@ html, body, .home-container, .home-row {
     font-size: 50px;
     color: #FFFFFF;
 }
+
+#answer {
+    background-color: yellow;
+}
+
+.drapAndDropImg {
+    cursor: move;
+    padding: 1rem;
+    width: 128px;
+    height: 128px;
+}
+
+.dragging {
+    opacity: 0.5;
+}

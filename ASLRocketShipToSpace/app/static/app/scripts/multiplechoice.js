@@ -30,7 +30,7 @@ function loadGame() {
     const randNum = Math.floor(Math.random() * 25);
     //use randNum as index in the alphabet, this will be the letter the user has to figure out
     const question = new ASLQuestion(ASLArray[randNum]);
-    
+
     //make the image, the question
     questionImage.src = question.image;
 

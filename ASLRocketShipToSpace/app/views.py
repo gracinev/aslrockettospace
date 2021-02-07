@@ -41,3 +41,15 @@ def mcqgame(request):
             'year':datetime.now().year,
         }
     )
+
+def draganddropgame(request):
+    """Renders the drag and drop game page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/draganddropgame.html',
+        {
+            'title':'Drag and Drop Game',
+            'year':datetime.now().year,
+        }
+    )
